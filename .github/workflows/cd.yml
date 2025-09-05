@@ -45,7 +45,7 @@ jobs:
               run: go install github.com/pressly/goose/v3/cmd/goose@latest
 
             - name: 'Run database migration script'
-              run: ./scripts/migrate.sh
+              run: ./scripts/migrateup.sh
 
             - name: 'Deploy to Cloud Run'
               run: |
